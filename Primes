@@ -1,0 +1,37 @@
+//written by: Japhet Gondwe
+//29th November, 2021
+//wrote this as a simple task to pass the time... hope it helps someone out there.
+
+
+
+import java.util.Scanner; //scanner
+
+public class primes //claass name
+{
+	public static void main(String []args)	
+{
+	
+		Scanner sc = new Scanner(System.in); //calling scanner 
+		
+		System.out.println("Enter lower number"); //prompt user input 1st
+		int a = sc.nextInt();
+		
+		System.out.println("Enter Higher number");//prompt user input 2nd
+		int b = sc.nextInt();
+		
+		
+	for (int i=a; i<=b;i++)//for statement looping through first and second input
+		{
+			
+			if(i==2 || i==3 || i==5)  //prints first three primes
+				System.out.println(i + " is prime");
+			
+			else
+				if(i%3 != 0 && i%2 != 0 && i%5 != 0) // if statement that calculates primes
+				{					
+						System.out.println(i + " is prime");
+				}
+		}
+	
+}
+}
